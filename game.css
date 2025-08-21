@@ -1,0 +1,46 @@
+:root{
+  --bg:#0b0b11;--panel:#101019;--text:#eae6ff;--muted:#a59fc6;
+  --accent:#bb86fc;--accent-2:#7c4dff;--accent-3:#00e5ff;--danger:#ff5370;
+}
+html,body{height:100%}
+body{
+  margin:0; background:
+    radial-gradient(1200px 700px at 10% -10%, rgba(124,77,255,.25), transparent 60%),
+    radial-gradient(1000px 600px at 90% 10%, rgba(0,229,255,.12), transparent 60%),
+    var(--bg);
+  color:var(--text); font-family:ui-sans-serif,system-ui,Segoe UI,Inter,Arial;
+  display:grid; place-items:center;
+}
+.wrap{
+  width:min(100vw,900px);
+  height:min(90vh,680px);
+  background:linear-gradient(180deg, rgba(17,17,28,.75), rgba(13,13,22,.6));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px; box-shadow:0 20px 60px rgba(124,77,255,.25);
+  position:relative; overflow:hidden;
+}
+canvas{position:absolute; inset:0; width:100%; height:100%}
+.hud{position:absolute; top:10px; left:12px; right:12px; display:flex; justify-content:space-between; gap:8px; pointer-events:none}
+.pill{
+  background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); color:var(--text);
+  padding:8px 12px; border-radius:999px; font-weight:600; text-shadow:0 0 10px rgba(187,134,252,.2)
+}
+.center{
+  position:absolute; inset:0; display:grid; place-items:center; text-align:center; padding:20px;
+}
+.card{
+  background:linear-gradient(180deg, rgba(18,18,30,.9), rgba(12,12,20,.75));
+  border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:24px 22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+h1{margin:.2rem 0 .6rem; font-size:clamp(24px,4vw,38px); text-shadow:0 6px 24px rgba(187,134,252,.35)}
+p{margin:.25rem 0; color:var(--muted)}
+.btns{display:flex; gap:10px; justify-content:center; margin-top:14px}
+button{
+  background:linear-gradient(135deg, var(--accent), var(--accent-2));
+  color:#0b0615; border:0; padding:12px 16px; border-radius:12px; font-weight:800; cursor:pointer;
+  box-shadow:0 10px 30px rgba(124,77,255,.25);
+}
+button.ghost{background:transparent;border:1px solid rgba(255,255,255,.15);color:var(--text)}
+/* mobile hint */
+.hint{position:absolute; bottom:10px; left:0; right:0; text-align:center; color:var(--muted); font-size:12px}

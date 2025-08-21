@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>Neon Dodge — mini game</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <div class="wrap" id="wrap">
+    <canvas id="game"></canvas>
+    <div class="hud">
+      <div class="pill" id="score">Score: 0</div>
+      <div class="pill" id="best">Best: 0</div>
+    </div>
+    <div class="center" id="overlay">
+      <div class="card" id="panel">
+        <h1>Neon Dodge</h1>
+        <p>Move the orb. Don’t touch the red squares. Collect cyan shards.</p>
+        <p><strong>Keys:</strong> WASD / Arrows — <strong>Touch:</strong> drag anywhere</p>
+        <div class="btns">
+          <button id="play">Play</button>
+          <button class="ghost" id="how">How to play</button>
+        </div>
+      </div>
+      <div class="hint">Tip: the longer you survive, the faster it gets.</div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
